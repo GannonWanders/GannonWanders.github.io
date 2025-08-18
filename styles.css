@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  max-width: 900px;
+  max-width: 1000 px;
   margin: auto;
   padding: 20px;
   background: #f9f9f9;
@@ -50,15 +50,21 @@ ul li {
   margin-bottom: 8px;
 }
 
-.experience-item,
-.project {
+.experience-item {
   margin-bottom: 20px;
+}
+.project {
+  display: flex;
+  align-items: flex-start;   /* aligns top edges of text & image */
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .project-img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  width: 200px;   /* set a fixed width */
+  height: 150px;  /* set a fixed height */
+  object-fit: cover;  /* crop images nicely without distortion */
+  margin-left: 20px;  /* spacing between text and image */
 }
 
 .skills-list {
